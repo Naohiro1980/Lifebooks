@@ -16,8 +16,24 @@ module.exports = function(config) {
     // list of files / patterns to load in the browser
     files: [
       // bower:js
+      'bower_components/jquery/dist/jquery.js',
+      'bower_components/angular/angular.js',
+      'bower_components/angular-new-router/dist/router.es5.js',
+      'bower_components/angular-resource/angular-resource.js',
+      'bower_components/angular-mocks/angular-mocks.js',
       // endbower
       // injector:js
+      'app/components/about/about.js',
+      'app/components/contact/contact.js',
+      'app/components/home/home.js',
+      'app/scripts/config.js',
+      'app/service/gruntfiles/gruntfiles.js',
+      'test/components/about/about.spec.js',
+      'test/components/contact/contact.spec.js',
+      'test/components/home/home.spec.js',
+      'test/main.spec.js',
+      'test/service/gruntfiles/gruntfiles.mock.js',
+      'test/service/gruntfiles/gruntfiles.spec.js',
       // endinjector
       'app/scripts/main.js',
       'test/main.spec.js'
