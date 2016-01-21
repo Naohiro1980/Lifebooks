@@ -12,14 +12,16 @@
       'Lifebooks.config',
       'Lifebooks.components.home',
       'Lifebooks.components.about',
+      'Lifebooks.components.camera',
       'Lifebooks.components.contact'
     ])
     .controller('AppController', AppController);
 
   AppController.$routeConfig = [
-    {path: '/',       redirectTo: '/home'},
+    {path: '/',       redirectTo: '/camera'},
     {path: '/home',    component: 'home'},
     {path: '/about',   component: 'about'},
+    {path: '/camera',  component: 'camera'},
     {path: '/contact', component: 'contact'}
   ];
 

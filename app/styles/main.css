@@ -25,6 +25,12 @@ footer {
   border-top: 1px solid #e5e5e5;
 }
 
+canvas {
+  border: 1px #333 solid;
+  max-width: 100%;
+  height: auto;
+}
+
 @media (max-width: 34em) {
   .bd-navbar .nav-item {
     float: none;
