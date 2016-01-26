@@ -18,6 +18,7 @@
        return true;
      }
      console.log('NG');
+     alert('Not Supported Canvas.');
      return false;
    }
 
@@ -25,6 +26,9 @@
      if (window.file && window.FileReader && window.FileList && window.Blob) {
        return true;
      }
+     alert(window.file);
+     alert(window.FileReader);
+     alert(window.FileList);
      console.log('NG');
      return false;
    }
