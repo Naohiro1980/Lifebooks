@@ -6,34 +6,40 @@
  (function() {
    'use strict';
    var canvas = document.getElementById('mycanvas');
+   console.log(canvas);
    window.onload = function() {
-     if (cheakFileApi() && cheakCanvas(canvas)) {
+     if (cheakCanvas(canvas)) {
+       console.log('0');
        var fileimage = document.getElementById('fileimage');
-       fileimage.addEventLister('change', selectReadfile, false);
+       console.log(fileimage);
+       fileimage.addEventListener('change', selectReadfile, false);
+       //fileimage.addEventLister('change', selectReadfile, false);
      }
+     console.log('6');
+     console.log(canvas);
    };
 
    function cheakCanvas(canvas) {
      if (canvas && canvas.getContext) {
+       console.log('1-1');
        return true;
      }
-     console.log('NG');
-     alert('Not Supported Canvas.');
+     console.log('1');
      return false;
    }
-
+ /*
    function cheakFileApi() {
      if (window.file && window.FileReader && window.FileList && window.Blob) {
        return true;
      }
-     alert(window.file);
-     alert(window.FileReader);
-     alert(window.FileList);
-     console.log('NG');
+     window.alert('cheackFileApi');
+     console.log('2');
      return false;
    }
-
+ */
    function selectReadfile(e) {
+     console.log('3');
+     console.log(e);
      var file = e.target.files;
      var reader = new FileReader();
      reader.readAsDataURL(file[0]);
@@ -43,6 +49,7 @@
    }
 
    function readDrawImg(reader, canvas, x, y) {
+     console.log('4');
      var img = readImg(reader);
      img.onload = function() {
        var w = img.width;
@@ -52,6 +59,7 @@
    }
 
    function readImg(reader) {
+     console.log('5');
      var resultdataURL = reader.result;
      var img = new Image();
      img.src = resultdataURL;
@@ -59,6 +67,7 @@
    }
 
    function drawImgOnCav(canvas, img, x, y, w, h) {
+     console.log('6');
      var ctx = canvas.getContext('2d');
      canvas.width = w;
      canvas.height = h;
