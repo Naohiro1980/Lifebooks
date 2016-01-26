@@ -24,6 +24,7 @@ module.exports = function(config) {
       // endbower
       // injector:js
       'app/components/about/about.js',
+      'app/components/calendar/calendar.js',
       'app/components/camera/camera.js',
       'app/components/camera/canvas.js',
       'app/components/contact/contact.js',
@@ -31,6 +32,7 @@ module.exports = function(config) {
       'app/scripts/config.js',
       'app/service/gruntfiles/gruntfiles.js',
       'test/components/about/about.spec.js',
+      'test/components/calendar/calendar.spec.js',
       'test/components/camera/camera.spec.js',
       'test/components/contact/contact.spec.js',
       'test/components/home/home.spec.js',
