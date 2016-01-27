@@ -7,7 +7,7 @@
   'use strict';
 
   angular
-    .module('Lifebooks.components.calendar', [])
+    .module('Lifebooks.components.calendar', ['ui.calendar'])
     .controller('CalendarController', CalendarController);
 
   CalendarController.$inject = [];
