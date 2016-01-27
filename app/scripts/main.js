@@ -13,7 +13,8 @@
       'Lifebooks.components.home',
       'Lifebooks.components.about',
       'Lifebooks.components.camera',
-      'Lifebooks.components.contact'
+      'Lifebooks.components.contact',
+      'Lifebooks.components.calendar'
     ])
     .controller('AppController', AppController);
 
@@ -22,7 +23,8 @@
     {path: '/home',    component: 'home'},
     {path: '/about',   component: 'about'},
     {path: '/camera',  component: 'camera'},
-    {path: '/contact', component: 'contact'}
+    {path: '/contact', component: 'contact'},
+    {path: '/calendar', component: 'calendar'}
   ];
 
   AppController.$inject = [];
