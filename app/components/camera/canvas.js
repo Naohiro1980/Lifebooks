@@ -27,7 +27,7 @@
      console.log('1');
      return false;
    }
- /*
+
    function cheakFileApi() {
      if (window.file && window.FileReader && window.FileList && window.Blob) {
        return true;
@@ -36,7 +36,7 @@
      console.log('2');
      return false;
    }
- */
+
    function selectReadfile(e) {
      console.log('3');
      console.log(e);
