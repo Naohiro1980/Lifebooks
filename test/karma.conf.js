@@ -25,7 +25,7 @@ module.exports = function(config) {
       // injector:js
       'app/components/about/about.js',
       'app/components/camera/camera.js',
-      'app/components/camera/canvas.js',
+      'app/components/camera/camera1.js',
       'app/components/contact/contact.js',
       'app/components/home/home.js',
       'app/scripts/config.js',
