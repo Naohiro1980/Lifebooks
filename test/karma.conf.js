@@ -23,19 +23,13 @@ module.exports = function(config) {
       'bower_components/moment/moment.js',
       'bower_components/fullcalendar/dist/fullcalendar.js',
       'bower_components/angular-ui-calendar/src/calendar.js',
-<<<<<<< HEAD
-<<<<<<< HEAD
       'bower_components/ng-file-upload/ng-file-upload.js',
-=======
       'bower_components/tether/dist/js/tether.js',
       'bower_components/firebase/firebase.js',
       'bower_components/angularfire/dist/angularfire.js',
->>>>>>> 78d9f6a6ecf3883b637a51a04759a208011b1468
-=======
       'bower_components/tether/dist/js/tether.js',
       'bower_components/firebase/firebase.js',
       'bower_components/angularfire/dist/angularfire.js',
->>>>>>> 78d9f6a6ecf3883b637a51a04759a208011b1468
       'bower_components/angular-mocks/angular-mocks.js',
       // endbower
       // injector:js
@@ -43,6 +37,7 @@ module.exports = function(config) {
       'app/components/album/album.js',
       'app/components/calendar/calendar.js',
       'app/components/camera/camera.js',
+      'app/components/camera/canvas.js',
       'app/components/contact/contact.js',
       'app/components/home/home.js',
       'app/scripts/config.js',

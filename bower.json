@@ -7,10 +7,7 @@
     "angular-new-router": "~0.5.3",
     "angular-resource": "~1.4.5",
     "angular-ui-calendar": "~1.0.1",
-<<<<<<< HEAD
     "ng-file-upload": "~11.2.3"
-=======
->>>>>>> 78d9f6a6ecf3883b637a51a04759a208011b1468
     "tether": "~1.1.1",
     "firebase": "~2.4.0",
     "angularfire": "~1.1.3"
