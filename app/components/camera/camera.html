@@ -1,19 +1,9 @@
 <div>
-  <p>元画像 <span id="src-width-height">width: height: </span></p>
-  <p>リサイズ <span id="dst-width-height">width: height: </span></p>
-  <p>画像を選択を選択してください。</p>
-  <p><input type="file" id='fileimage' capture="camera" accept="image/*"></p>
-  <canvas id="mycanvas">Canvas対応のブラウザを使用して下さい。</canvas>
-  <script src="components/camera/canvas.js"></script>
-
-  <ul>
-    <li ng-repeat="message in messages">
-      <input type="text" ng-model="message.text" ng-change="messages.$save(message)">
-      <button ng-click="messages.$remove(message)">Delete Message</button>
-    </li>
-  </ul>
-  <form ng-submit="addMessage()">
-    <input type="text" ng-model="newMessageText">
-    <button type="submit">Add messages</button>
-  </form>
+    <div ng-controller="myController">
+        <input type="file" file-model="imageFile"/>
+        <br/>
+        <img ng-if="imageFileSrc"
+             ng-src="{{imageFileSrc}}"
+             style="max-width: 300px"/>
+    </div>
 </div>

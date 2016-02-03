@@ -31,6 +31,60 @@ canvas {
   height: auto;
 }
 
+.thumb {
+  width: 24px;
+  height: 24px;
+  float: none;position: relative;
+  top: 7px;
+}
+
+form .progress {
+  line-height: 15px;
+}
+
+.progress {
+  display: inline-block;
+  width: 100px;
+  border: 3px groove #CCC;
+}
+
+.progress div {
+  font-size: smaller;
+  background: orange;
+  width: 0;
+}
+
+ol,
+ul{
+  list-style:none;
+}
+
+#content #photo{
+  position: relative;
+  overflow: hidden;
+}
+
+#content #photo ul{
+  position: relative;
+  left: 50%;
+  float: left;
+}
+
+#content #photo li{
+  position: relative;
+  left: -50%;
+  float: left;
+}
+
+#content #photo .r20{
+  margin-left:20px;
+}
+
+#content #photo li img {
+  width: 420px;
+  height: 420px;
+}
+
 @media (max-width: 34em) {
   .bd-navbar .nav-item {
     float: none;
