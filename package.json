@@ -53,6 +53,7 @@
   "dependencies": {
     "body-parser": "^1.13.2",
     "express": "^4.13.1",
+    "firebase": "^2.4.0",
     "grunt-gh-pages": "^1.0.0"
   }
 }
