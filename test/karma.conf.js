@@ -24,7 +24,13 @@ module.exports = function(config) {
       'bower_components/fullcalendar/dist/fullcalendar.js',
       'bower_components/angular-ui-calendar/src/calendar.js',
 <<<<<<< HEAD
+<<<<<<< HEAD
       'bower_components/ng-file-upload/ng-file-upload.js',
+=======
+      'bower_components/tether/dist/js/tether.js',
+      'bower_components/firebase/firebase.js',
+      'bower_components/angularfire/dist/angularfire.js',
+>>>>>>> 78d9f6a6ecf3883b637a51a04759a208011b1468
 =======
       'bower_components/tether/dist/js/tether.js',
       'bower_components/firebase/firebase.js',
