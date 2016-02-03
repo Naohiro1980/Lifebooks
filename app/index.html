@@ -2,10 +2,10 @@
 <html lang="">
   <head>
     <meta charset="utf-8">
-    <base href="/">
   <!--
     <base href="http://naohiro1980.github.io/Lifebooks/">
 -->
+    <base href="/">
     <title>Lifebooks</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
@@ -13,12 +13,17 @@
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <!-- build:css(.) styles/vendor.css -->
     <!-- bower:css -->
-    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="bower_components/fullcalendar/dist/fullcalendar.css" />
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
+
+    <!--cdn-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <!--cdnend-->
   </head>
   <body ng-app="Lifebooks" ng-controller="AppController as Lifebooks">
     <!--[if lt IE 10]>
@@ -41,6 +46,12 @@
     <script src="bower_components/angular/angular.js"></script>
     <script src="bower_components/angular-new-router/dist/router.es5.js"></script>
     <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/moment/moment.js"></script>
+    <script src="bower_components/fullcalendar/dist/fullcalendar.js"></script>
+    <script src="bower_components/angular-ui-calendar/src/calendar.js"></script>
+    <script src="bower_components/tether/dist/js/tether.js"></script>
+    <script src="bower_components/firebase/firebase.js"></script>
+    <script src="bower_components/angularfire/dist/angularfire.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
@@ -73,6 +84,7 @@
         <!-- build:js({app,.tmp}) scripts/main.js -->
         <!-- injector:js -->
         <script src="components/about/about.js"></script>
+        <script src="components/album/album.js"></script>
         <script src="components/calendar/calendar.js"></script>
         <script src="components/camera/camera.js"></script>
         <script src="components/camera/canvas.js"></script>
