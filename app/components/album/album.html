@@ -1,0 +1,41 @@
+<h2>写真登録</h2>
+<!--<div>album.html</div>
+<div class="nav nav-tabs">
+  <li role="presentation" class="active"><a ng-click="setActiveTab(1)">tab1</a></li>
+  <li role="presentation"><a ng-click="setActiveTab(2)">tab2</a></li>
+  <li role="presentation"><a ng-click="setActiveTab(3)">tab3</a></li>
+</div>
+<div class="tabs">
+  <div ng-if="activeTab == 1">
+  tab1
+
+  </div>
+  <div ng-if="activeTab == 2">
+  tab2
+
+
+  </div>
+  <div ng-if="activeTab == 3">
+  tab3
+
+  </div>
+</div>-->
+
+<!--写真-->
+<input type="file" file-model="imageFile"　multiple/>
+<img ng-if="imageFileSrc" ng-src="{{imageFileSrc}}" style="max-width: 300px"/>
+<br/>
+<p>イベント入力</p>
+<input type="text" ng-model="coment"/>
+<br/>
+<button ng-click="onclick()">登録</button>
+<!--閲覧-->
+<ul>
+  <li ng-repeat = "message in messages">
+    <img src="{{message.img}}" style="max-width: 300px"></img>
+    <p> イベント：　{{message.coment}}</p>
+    <button ng-click="messages.$remove(message)">削除</button>
+  </li>
+</ul>
+
+<br/>
