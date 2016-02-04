@@ -20,7 +20,7 @@
     .controller('AppController', AppController);
 
   AppController.$routeConfig = [
-    {path: '/',       redirectTo: '/camera'},
+    {path: '/',       redirectTo: '/album'},
     {path: '/home',    component: 'home'},
     {path: '/album',   component: 'album'},
     {path: '/about',   component: 'about'},

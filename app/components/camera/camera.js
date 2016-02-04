@@ -5,39 +5,39 @@
  */
 (function () {
   'use strict';
-  var myApp = angular.module('Lifebooks', []);
 
-  myApp.directive('fileModel', ['$parse', function($parse) {
-    return {
-      restrict: 'A',
-      link: function(scope, element, attrs) {
-        var model = $parse(attrs.fileModel);
-        element.bind('change', function() {
-          scope.$apply(function() {
-            model.assign(scope, element[0].files[0]);
-          });
-        });
-      }
-    };
-  }]);
+  angular
+    .module('Lifebooks.components.camera', [])
+    .controller('CameraController', CameraController);
 
-  myApp.controller('myController', ['$scope', function($scope) {
+  CameraController.$inject = [];
 
-    $scope.$watch('imageFile', function(imageFile) {
+  /**
+   * CameraController
+   *
+   * @class CameraController
+   * @constructor
+   */
+  function CameraController() {
+    console.log('CameraController Constructor');
+  }
 
-      $scope.imageFileSrc = undefined;
+  /**
+   * The controller activate makes it convenient to re-use the logic
+   * for a refresh for the controller/View, keeps the logic together.
+   *
+   * @method activate
+   */
+  CameraController.prototype.activate = function() {
+    console.log('CameraController activate Method');
+    vm = this;
+  };
 
-      if (!imageFile || !imageFile.type.match('image.*')) {
-        return;
-      }
-
-      var reader = new FileReader();
-      reader.onload = function() {
-        $scope.$apply(function() {
-          $scope.imageFileSrc = reader.result;
-        });
-      };
-      reader.readAsDataURL(imageFile);
-    });
-  }]);
+  /**
+   * Angular ViewModel
+   *
+   * @property vm
+   * @type {Object}
+   */
+  var vm;
 })();
