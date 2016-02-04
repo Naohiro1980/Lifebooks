@@ -12,6 +12,7 @@
           '*.{ico,png,txt}',
           'images/{,*/}*.webp',
           'components/{,*/}*.html',
+          'components/{,*/}*.js',
           'directives/{,*/}*.html',
           '{,*/}*.html',
           'styles/fonts/{,*/}*.*'
