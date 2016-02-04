@@ -48,7 +48,7 @@
     vm = this;
 
     /*firebaseのインスタンス生成*/
-    var ref = new window.Firebase('https://fiery-torch-4495.firebaseio.com/');
+    var ref = new window.Firebase('https://glowing-heat-7665.firebaseio.com/');
     $scope.messages = $firebaseArray(ref);
 
     /*fileAPIの写真データ取得*/
